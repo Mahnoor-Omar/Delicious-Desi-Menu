@@ -24,9 +24,9 @@ This project highlights traditional Pakistani/Indian dishes with a clean and mod
 ## 📂 Project Structure
 
 
-├── menue.html        # Main page
-├── styleee.css       # Stylesheet
-├── images/           # Food images (pakora, samosa, kebab, etc.)
+├── menue.html       
+├── styleee.css      
+├── images/          
 
 
 
