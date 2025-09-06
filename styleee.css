@@ -1,0 +1,106 @@
+/* General Page Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color:#fcd2e0;
+  color: #800000;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color:red;
+  text-shadow: 1px 1px 2px #f0c27b;
+}
+
+/* Flexbox Layout for Sections */
+.menu-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual Section Styling */
+.section {
+  flex: 1 1 32%; /* Each section takes ~1/3 width */
+  background: linear-gradient(135deg, #E11584, #FF9966);
+  color: #fff;
+
+  background-color: #fff8f0;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.section h2 {
+  font-size: 2rem;
+  color:#FFD700;
+  border-bottom: 3px solid #FFD700;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* Menu Items */
+.menu-item {
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color:blanchedalmond;
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.menu-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.menu-img {
+  width: 60px;      /* make it small */
+  height: auto;     /* keep proportions */
+  border-radius: 8px;
+  margin: 5px 10px 5px 0;
+  vertical-align: middle;
+}
+.menu-item h3 {
+  margin: 0;
+  color:red
+}
+
+.menu-item p {
+  margin: 5px 0;
+  color:black;
+}
+
+.menu-item .price {
+  font-weight: bold;
+  text-align: right;
+  color: #000;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+  .section {
+    flex: 1 1 48%; /* Two per row */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .section {
+    flex: 1 1 100%; /* One per row */
+  }
+}
